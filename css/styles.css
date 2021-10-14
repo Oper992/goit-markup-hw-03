@@ -6,25 +6,32 @@
   --footer-and-banner-background-color: #2f303a;
   --white-color: #ffffff;
 }
-*{
-  box-sizing: border-box;
-}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--black-text-color);
   letter-spacing: 0.03em;
   background-color: var(--white-color);
 }
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+h1,h2,h2,h4{
+  margin: 0;
+}
 /* -------------------header------------------ */
 header{
   display: flex;
   justify-content:center;
   height: 80px;
+  border-bottom: 1px solid #ECECEC;
 }
 .container{
   display: flex;
   width: 1200px;
   align-items: center;
+  justify-content:center;
 }
 .logo-header {
   font-family: "Raleway", sans-serif;
@@ -34,20 +41,22 @@ header{
   line-height: 1.19;
   color: var(--black-text-color);
   margin-right: 93px;
+  padding: 0;
 }
 .logo-web {
   color: var(--blue-color);
 }
 .nav-list{
   display: flex;
-  padding-left: 0;
-  margin: 0;
 }
 .header-section{
   display: flex;
+  width: 1200px;
+  align-items: center;
+  justify-content:center;
 }
 .header-nav{
-margin-right: 331px;
+  margin-right: 331px;
 }
 .nav-link {
   color: var(--black-text-color);
@@ -56,15 +65,11 @@ margin-right: 331px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.nav-link:not(:last-child) {
   margin-right: 50px;
 }
-.nav-link:last-child {
-  margin-right: 0;
-}
-.list-style-type {
-  list-style-type: none;
-}
-.list-style-type .nav-link.current {
+.nav-link.current {
   color: var(--blue-color);
 }
 .nav-link:hover,
@@ -74,6 +79,7 @@ margin-right: 331px;
 .contacts-list{
   display: flex;
   margin: 0;
+  padding: 0;
 }
 .contacts-link {
   color: var(--gray-text-color);
@@ -83,7 +89,7 @@ margin-right: 331px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contacts-link:first-child{
+.contacts-item-link:first-child{
   margin-right: 50px;
 }
 .contacts-link:hover,
@@ -92,34 +98,30 @@ margin-right: 331px;
 }
 .banner {
   background-color: var(--footer-and-banner-background-color);
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  padding: 200px 0 200px 0;
+  text-align: center;
 }
 .title-banner{
-  margin: 0;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 .banner-button {
   color: var(--white-color);
   background-color: var(--blue-color);
   font-weight: bold;
   line-height: 1.87;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   border-radius: 4px;
   border: none;
   font-size: 16px;
+  width: 200px;
+  height: 50px;
 }
 .visually-hidden {
   position: absolute;
