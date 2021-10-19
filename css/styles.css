@@ -70,13 +70,6 @@ header {
 }
 .nav-list {
   display: flex;
-  
-}
-.header-section {
-  display: flex;
-  width: 1200px;
-  align-items: center;
-  justify-content: center;
 }
 .header-nav {
   margin-right: 331px;
@@ -90,7 +83,6 @@ header {
   letter-spacing: 0.02em;
   padding: 32px 0;
 }
-
 .nav-link:not(:last-child) {
   margin-right: 50px;
 }
@@ -113,6 +105,7 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
 }
 .contacts-item-link:first-child {
   margin-right: 50px;
@@ -186,10 +179,12 @@ header {
 .features-image-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 94px;
 }
 .features-image-item:not(:last-child) {
   margin-right: 30px;
+}
+.features-image{
+  padding-bottom: 94px;
 }
 .our-team {
   background-color: var(--gray-background-color);
