@@ -105,7 +105,7 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
+display: block;
 }
 .contacts-item-link:first-child {
   margin-right: 50px;
